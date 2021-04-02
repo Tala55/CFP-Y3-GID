@@ -1,0 +1,27 @@
+.Anchor {
+    color: #fff;
+    float: left;
+    border: none;
+    border-radius: 10px;
+    opacity: 0.8;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0px;
+    padding-top: 8px;
+    padding-left: 8px;
+    height: 30px;
+    width: 40px;
+    margin-right: 5px;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+.Anchor:hover {
+    opacity: 1;
+}
+.inline {
+    display: inline-block;
+}

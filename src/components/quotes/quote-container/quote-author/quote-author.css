@@ -1,0 +1,8 @@
+.Quote-author {
+    text-align: right;
+    font-size: 0.8em;
+    -webkit-transition: color 5s ease-out;
+    -moz-transition: color 5s ease-out;
+    -o-transition: color 5s ease-out;
+    transition: color 5s ease-out;
+}

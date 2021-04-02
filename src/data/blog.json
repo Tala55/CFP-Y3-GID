@@ -1,0 +1,29 @@
+{
+    "data" : [
+        {
+            "id": 1,
+          
+            "blogTitle" : "TodoList",
+   
+            "blogImage": "https://images.pexels.com/photos/681335/pexels-photo-681335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "blogText": "Todo list"
+        },
+        {
+            "id": 2,
+           
+            "blogTitle": "calender",
+
+            "blogImage": "https://images.pexels.com/photos/258083/pexels-photo-258083.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "blogText": "Calender"
+        },
+        {
+            "id": 3,
+          
+            "blogTitle": "quotes",
+        
+            "blogImage": "https://i0.wp.com/www.autoblog.gr/wp-content/uploads/2020/09/Suzuki-Jimny-Light-Commercial-Vehicle-1.jpg?resize=696%2C492&ssl=1",
+            "blogText":"quotes"
+        }
+        
+    ]
+}
