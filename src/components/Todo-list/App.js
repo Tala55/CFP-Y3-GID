@@ -1,92 +1,135 @@
-import React from 'react';
+import React, { Component } from 'react'
+import uuid from 'uuid'
+import TodoInput from './components/TodoInput'
+import TodoList from './components/TodoList'
 
-import './App.css';
-import ListItems from './list-items'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faTrash } from '@fortawesome/free-solid-svg-icons'
+class App extends Component {
+	constructor(props) {
+		super(props)
+		this.state={
+			items: [],
+			itemsToShow: "all",
+			id: uuid(),
+			item: '',
+			editItem: false,
+		}
+	}
 
-library.add(faTrash)
+	handleChange = event => {
+		this.setState({
+			item: event.target.value
+		})
+	}
 
-class App extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      items:[],
-      currentItem:{
-        text:'',
-        key:''
-      }
-    }
-    this.addItem = this.addItem.bind(this);
-    this.handleInput = this.handleInput.bind(this);
-    this.deleteItem = this.deleteItem.bind(this);
-    this.setUpdate = this.setUpdate.bind(this);
-  }
-  addItem(e){
-    e.preventDefault();
-    const newItem = this.state.currentItem;
-    if(newItem.text !==""){
-      const items = [...this.state.items, newItem];
-    this.setState({
-      items: items,
-      currentItem:{
-        text:'',
-        key:''
-      }
-    })
-    }
-  }
-  handleInput(e){
-    this.setState({
-      currentItem:{
-        text: e.target.value,
-        key: Date.now()
-      }
-    })
-  }
-  deleteItem(key){
-    const filteredItems= this.state.items.filter(item =>
-      item.key!==key);
-    this.setState({
-      items: filteredItems
-    })
+	handleSubmit = event => {
+		event.preventDefault()
+		
+		const newItem = {
+			id: this.state.id,
+			title: this.state.item,
+			completed: false
+		}
+		
+		const updatedItems = [...this.state.items, newItem]
 
-  }
-  setUpdate(text,key){
-    console.log("items:"+this.state.items);
-    const items = this.state.items;
-    items.map(item=>{      
-      if(item.key===key){
-        console.log(item.key +"    "+key)
-        item.text= text;
-      }
-    })
-    this.setState({
-      items: items
-    })
-    
-   
-  }
- render(){
-  return (
-    <div style={{ backgroundColor: "#191970",
-      minHeight: "500px",
-      width: "400px",
-      margin: "40px auto"}}>
-      <header>
-        <form id="to-do-form" onSubmit={this.addItem}>
-          <input type="text" placeholder="Enter task" value= {this.state.currentItem.text} onChange={this.handleInput}></input>
-          <button type="submit">Add</button>
-        </form>
-        <p>{this.state.items.text}</p>
-        
-          <ListItems items={this.state.items} deleteItem={this.deleteItem} setUpdate={this.setUpdate}/>
-        
-      </header>
-    </div>
-  );
- }
+		if (this.state.item.length > 0) {
+			this.setState({
+				items: updatedItems,
+				id: uuid(),
+				item: '',
+				editItem: false
+			})
+		}
+	}
+
+	updateTodosToShow = string => {
+		this.setState({
+			itemsToShow: string
+		});
+	};
+
+	handleDoneTask = (id, completed) => {
+		const filteredItems = this.state.items.map(item => {
+			item.id === id && (item.completed = !item.completed)
+			return item
+		})
+
+		this.setState({
+			items: filteredItems,
+		})
+	}
+
+	handleDelete = id => {
+		const filteredItems = this.state.items.filter(item => item.id !== id)
+
+		this.setState({
+			items: filteredItems
+		})
+	}
+
+	handleEdit = id => {
+		const filteredItems = this.state.items.filter(item => item.id !== id)
+
+		const selectedItem = this.state.items.find(item => item.id === id)
+
+		this.setState({
+			items: filteredItems,
+			id: id,
+			item: selectedItem.title,
+			editItem: true
+		})
+	}
+
+	handleDeleteDoneTasks = () => {
+		const filteredItems = this.state.items.filter(item => item.completed === false)
+
+		this.setState({
+			items: filteredItems
+		})
+	}
+
+	clearList = () => {
+		this.setState({
+			items: []
+		})
+	}
+
+	render() {
+		let items = []
+
+		if (this.state.itemsToShow === "all") {
+			items = this.state.items;
+		} else if (this.state.itemsToShow === "todo") {
+			items = this.state.items.filter(item => !item.completed);
+		} else if (this.state.itemsToShow === "done") {
+			items = this.state.items.filter(item => item.completed);			
+		}
+
+		return (
+			<div className="container">
+				<div className="row">
+					<div className="col-10 col-md-8 mx-auto mt-4">
+						<h3 className="text-capitalize text-center">TodoInput</h3>
+						<TodoInput
+							item={this.state.item}
+							handleChange={this.handleChange}
+							handleSubmit={this.handleSubmit}
+						/>
+						<TodoList
+							items={items}
+							filterDoneTasks={this.filterDoneTasks}
+							clearList={this.clearList}
+							handleDelete={this.handleDelete}
+							handleEdit={this.handleEdit}
+							handleDoneTask={this.handleDoneTask}
+							handleDeleteDoneTasks={this.handleDeleteDoneTasks}
+							updateTodosToShow={this.updateTodosToShow}
+						/>
+					</div>
+				</div>
+			</div>
+		);
+	}
 }
-
 
 export default App;
