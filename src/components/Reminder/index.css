@@ -1,0 +1,105 @@
+
+
+.sandbox-correct-pronounciation {
+  padding: 3em 0 3em 0;
+}
+.heading-correct-pronounciation {
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: 'Cardo', serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  line-height: 1em;
+}
+
+var {
+  font-family: 'EB Garamond', serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  font-style: normal;
+  padding-top: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+
+var::before,
+var::after {
+  content: "§";
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  opacity: 0.2;
+  margin: 0 0.6em;
+  font-size: 0.5em;
+}
+
+.bottom {
+  font-size: 1.5em;
+  letter-spacing: 0.07em;
+  font-size: 1em;
+  display: block;
+}
+
+/* .App {
+  display: flex;
+  align-items:  center;
+  flex-direction: column;
+  padding-top: 20px;
+} */
+
+.title {
+  font-size: 30px;
+  
+}
+
+input {
+  margin: 5px;
+  
+}
+
+.reminder-form {
+  padding: 5;
+  margin-left: 200px;
+
+}
+
+.list-item {
+  width: auto;
+ 
+  
+  
+}
+
+.delete-button {
+  float: right;
+  padding-left: 5px;
+}
+
+.btn {
+  margin-right: 5px;
+}
+
+.reminder-tasks {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+li {
+  width: 100%;
+  margin: 5px 0px;
+}

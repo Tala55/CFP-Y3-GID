@@ -8,10 +8,10 @@ class App extends Component {
     super(props);
     this.state = {
       quote: {
-        "attrib": "Steve Jobs",
-        "quote": "Design is not just what it looks like and feels like. Design is how it works."
+        "attrib": "Alan Lakein",
+        "quote": "Time = life; therefore, waste your time and waste of your life, or master your time and master your life."
       },
-      color: '#16a085',
+      color: '#B01C34 ',
     };
   }
   handleClick() {
@@ -43,32 +43,32 @@ export default App;
 function generateQuote() {
   const quotes = [
     {
-      "attrib": "Steve Jobs",
-      "quote": "Design is not just what it looks like and feels like. Design is how it works."
+      "attrib": "Jim Rohn",
+      "quote": "Time is more valuable than money. You can get more money, but you cannot get more time."
     }, {
-      "attrib": "Steve Jobs",
-      "quote": "Innovation distinguishes between a leader and a follower."
+      "attrib": " Mozart",
+      "quote": " The shorter way to do many things is to only do one thing at a time."
     }, {
-      "attrib": "Albert Einstein",
-      "quote": "Reality is merely an illusion, albeit a very persistent one."
+      "attrib": "William Shakespeare",
+      "quote": "Better to be three hours too soon, than a minute too late."
     }, {
-      "attrib": "Albert Einstein",
-      "quote": "If you can't explain it simply, you don't understand it well enough."
+      "attrib": "Mother Teresa",
+      "quote": "Yesterday is gone. Tomorrow has not yet come. We have only today. Let us begin."
     }, {
-      "attrib": "Albert Einstein",
-      "quote": "Strive not to be a success, but rather to be of value."
+      "attrib": "Shoppenhauer",
+      "quote": "The common man is not concerned about the passage of time, the man of talent is driven by it."
     }, {
-      "attrib": "Steve Jobs",
-      "quote": "Your time is limited, so don’t waste it living someone else’s life."
+      "attrib": "Stephen R. Covey",
+      "quote": "The key is in not spending time, but in investing it."
     }, {
-      "attrib": "Bill Gates",
-      "quote": "Success is a lousy teacher. It seduces smart people into thinking they can't lose."
+      "attrib": "Steven Covey",
+      "quote": "Most of us spend too much time on what is urgent, and not enough time on what is important"
     }, {
-      "attrib": "Albert Einstein",
-      "quote": "Science without religion is lame, religion without science is blind."
+      "attrib": "Thomas Edison",
+      "quote": "Time is really the only capital that any human being has, and the only thing he can't afford to lose"
     }, {
-      "attrib": "Henry Ford",
-      "quote": "Whether you think you can or you think you can’t, you’re right."
+      "attrib": "Golda Meir",
+      "quote": "I must govern the clock, not be governed by it."
     },
   ];
   var quoteNumb = Math.floor(Math.random() * quotes.length);
@@ -77,18 +77,18 @@ function generateQuote() {
 }
 function generateColor() {
   const colors = [
-    '#16a085', 
-    '#27ae60', 
-    '#2c3e50', 
-    '#f39c12', 
-    '#e74c3c', 
-    '#9b59b6', 
-    '#FB6964', 
-    '#342224', 
-    '#472E32', 
-    '#BDBB99', 
-    '#77B1A9', 
-    '#73A857',
+    '#858585  ', 
+     '#C3B299    ', 
+     '#5FAB8F  ', 
+     ' #d2a679', 
+     '#80ffff  ', 
+     '#dd99ff ', 
+    // '#F497DA ', 
+    // '#70B8FF ', 
+    // '#B964A7 ', 
+    // '#F39B68 ', 
+    // '#7E7E8B ', 
+    // 'E5B361 ',
   ];
   var colorNumb = Math.floor(Math.random() * colors.length);  
   

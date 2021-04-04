@@ -15,15 +15,17 @@ export default class TodoList extends Component {
 
         return (
             <Fragment>
-                <h3 className="text-center">
-                    TodoList
+                <h3 className="text-center" style={{fontFamily:"cursive",fontSize:"40px"}}>
+                    Your Tasks
                 </h3>
+                <div className="card card-body my-3">
 
-                <div className="row">
+                <div className="row" >
                     <div className="col-md-4">
                         <button 
                             type="button"
-                            className="btn btn-info btn-block mt-1"
+                            className="btn btn-danger btn-block mt-1"
+
                             onClick={() => updateTodosToShow("all")}
                         >
                             All
@@ -32,7 +34,8 @@ export default class TodoList extends Component {
                     <div className="col-md-4">
                         <button 
                             type="button"
-                            className="btn btn-info btn-block mt-1"
+                            className="btn btn-danger btn-block mt-1"
+
                             onClick={() => updateTodosToShow("done")}
                         >
                             Done
@@ -41,7 +44,8 @@ export default class TodoList extends Component {
                     <div className="col-md-4">
                         <button 
                             type="button"
-                            className="btn btn-info btn-block mt-1"
+                            className="btn btn-danger btn-block mt-1"
+
                             onClick={() => updateTodosToShow("todo")}
                         >
                             Todo
@@ -90,6 +94,7 @@ export default class TodoList extends Component {
                         </div>
                     </ul>
                 }
+                </div>
             </Fragment>
         )
     }

@@ -1,7 +1,8 @@
 .Quote-text {
     font-size: 1.75em;
-    -webkit-transition: color 5s ease-out;
-    -moz-transition: color 5s ease-out;
-    -o-transition: color 5s ease-out;
-    transition: color 5s ease-out;
+    -webkit-transition: color 2s ease-out;
+    -moz-transition: color 2s ease-out;
+    -o-transition: color 2s ease-out;
+    transition: color 2s ease-out;
+    font-weight: bold;
 }

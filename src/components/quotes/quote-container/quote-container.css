@@ -3,10 +3,11 @@
     height: auto;
     border-radius: 15px;
     text-align: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
+    margin-bottom: 5%;
     padding: 20px 20px 20px 20px;
     font-family: 'Raleway', sans-serif;
 }
