@@ -54,11 +54,11 @@ class App extends Component {
     return (
       <div className="App">
         <div class="sandbox sandbox-correct-pronounciation">
-          <h1 class="heading heading-correct-pronounciation">
-            <var>Todo List Reminder</var>
-          </h1>
+          
+            <var className="text-capitalize text-center "style={{fontFamily:'cursive',fontSize:'40px',content: "§",textAlign:'center',marginTop:'50px',marginBottom:'-20px'}}>Remembering Future Tasks</var>
+          
         </div>
-        <div className="form-inline reminder-form">
+        <div className="form-inline reminder-form" style={{marginBottom:'200px'}}>
           <div className="form-group">
             <input
               className="form-control"

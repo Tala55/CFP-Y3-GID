@@ -1,5 +1,5 @@
 import React from 'react'
-import App from '../quotes/App'
+import App from '../../../quotes/App'
 function Quotes() {
     return (
         <div>

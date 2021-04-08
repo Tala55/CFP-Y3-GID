@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import QuoteContainer from './quote-container/quote-container.js';
 
 
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +16,7 @@ class App extends Component {
   handleClick() {
     var quote = generateQuote();
     var color = generateColor();
-    document.body.style = 'background: ' + color + ';';
+    document.body.style =  color + ';';
     this.setState({
       quote: quote,
       color: color,
@@ -77,18 +76,21 @@ function generateQuote() {
 }
 function generateColor() {
   const colors = [
-    '#858585  ', 
-     '#C3B299    ', 
-     '#5FAB8F  ', 
-     ' #d2a679', 
-     '#80ffff  ', 
-     '#dd99ff ', 
-    // '#F497DA ', 
-    // '#70B8FF ', 
-    // '#B964A7 ', 
-    // '#F39B68 ', 
-    // '#7E7E8B ', 
-    // 'E5B361 ',
+    // بني
+    '#170b85   ',
+    // رمادي 
+    '#cf4c00 ',
+    // (كجلبي)
+    '#3e4659',
+// تركوازي غغامق
+     '#00d1c0',
+    //  ازرق فاتح
+     '#00d1c0',
+    //  فستقي
+     '#cf0485',
+    //  ازرقاني
+     '#1fcf04',
+     '#c9d400'
   ];
   var colorNumb = Math.floor(Math.random() * colors.length);  
   

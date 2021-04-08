@@ -109,7 +109,7 @@ class App extends Component {
 			<div style={{marginTop:"60px"}}>
 				<div className="row">
 					<div className="col-10 col-md-8 mx-auto mt-4">
-						<h3 className="text-capitalize text-center "style={{fontFamily:"cursive",fontSize:"50px"}}>Organize your tasks</h3>
+						<var className="text-capitalize text-center "style={{fontFamily:"cursive",fontSize:"50px",letterSpacing:'2px'}}>Organize your daily tasks</var>
 						<TodoInput
 							item={this.state.item}
 							handleChange={this.handleChange}

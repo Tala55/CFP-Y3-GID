@@ -1,12 +1,15 @@
 import React from "react";
-
+import Navbar from '../components/Navbar/index'
 import AllPosts from '../components/AllPosts';
+import Home from '../components/Tabs/Home'
 const MainPage = () => {
     return(
 
         <div>
-            <h3 className="my-3">All Posts</h3>
-            <AllPosts />
+            
+                <Home/>
+            {/* <AllPosts /> */}
+           
         </div>
   
 

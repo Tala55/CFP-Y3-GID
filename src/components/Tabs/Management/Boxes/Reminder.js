@@ -1,11 +1,11 @@
 import React from 'react'
 
-import App from "../Reminder/App"
+import App from "../../../Reminder/App"
 
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import reducer from '../Reminder/reducers';
-import '../Reminder/index.css';
+import reducer from '../../../Reminder/reducers';
+import '../../../Reminder/index.css';
 
 
 

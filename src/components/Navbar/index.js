@@ -7,11 +7,11 @@ function Navbar() {
     return (
         <div className="start">
             <div className='Link'>
-            <a href="/"className="special">⬅ Back</a>
-        <Link to="/Calendar"className="line"> <a className="id1">Calendar</a> </Link>
-        <Link  to="/TodoList"className="line"> <a className="id1">TodoList</a></Link>
-        <Link  to="/Quotes"className="line"> <a className="id1">Quotes</a></Link>
-
+            {/* <a href="/"className="special">⬅ Back</a> */}
+        <Link to="/Home"className="line"> <a className="id1">Home</a> </Link>
+        <Link  to="/Management"className="line"> <a className="id1">Management</a></Link>
+        <Link  to="/Quotes"className="line"> <a className="id1">inspiration</a></Link>
+        <Link  to="/Quotes"className="line"> <a className="id1">About us</a></Link>
             </div>
         </div>
     )
