@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Aboutus.css"; 
+// import "./Aboutus.css"; 
 
 
 export default function images() {
