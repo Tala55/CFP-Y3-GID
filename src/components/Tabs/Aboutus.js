@@ -16,14 +16,14 @@ import "./Aboutus.css"
 export default function Aboutus() {
     return (
         <div>
-              <div style = {{marginBottom : "-50px" ,
+              <div style = {{marginBottom : "-110px" ,
               marginTop:" 70px " , textAlign: 'center', justifyContent: 'center' ,
               alignItems: 'center' , 
                 }}>
                 <h2 style = {{marginLeft : "38%" , width : '200px', 
                 borderBottom : "3px solid #a80c2b" ,fontSize : '40px', marginBottom : '30px',fontFamily:'cursive'
                 }}>About us </h2>
-                <p style = {{fontSize : '20px',fontFamily:'cursive',width:"",marginLeft:''}}>Creativity and fun are our ingredients for awesome work.fdfdfdfdddddddddd</p>
+                <p style = {{fontSize : '20px',fontFamily:'cursive',width:"660px",marginLeft:'210px'}}>Our team decided to create this app to make it easier for you to manage your time and to be able to plan everything for your day, hoping that you will have a great experience using it. So know more about our team.</p>
 
                 </div>
                 <div  style={{display:'flex',marginLeft:'70px'}}>
@@ -31,7 +31,7 @@ export default function Aboutus() {
                 <div class="person-badge">
               
               <img src={Hala1} style={{height:'315px',marginBottom:'-90px',width:"340px",marginLeft:"-30px"}}class="normal" />
-              <img class="peculiar"style={{height:'440px',marginBottom:'-100px',width:"340px",marginLeft:"-60px"}} src={Hala2}/>
+               <img class="peculiar"style={{height:'440px',marginBottom:'-100px',width:"340px",marginLeft:"-60px"}} src={Hala2}/> 
               {/* <img class="peculiar"style={{ height:'420px',marginBottom:'-80px',width:"275px",marginLeft:"-10px"}} src={Hala3}/> */}
               </div>
                 </div>  
@@ -60,7 +60,7 @@ export default function Aboutus() {
               <div style={{borderTop:"1px solid black",marginTop:'100px'}}>    
               <p style={{fontFamily:"cursive",marginTop:"30px"}}>Need a hand? Or need a highfive? <br/>Here's how to reach us:</p>
               <h2 style={{fontFamily:'cursive',fontSize:'22px'}}>✉️ GitItDone@gmail.com</h2>
-              <h2 style={{fontFamily:'cursive',fontSize:'23px'}}>📞 0599328727</h2>
+              <h2 style={{fontFamily:'cursive',fontSize:'23px'}}>📞 08288765222</h2>
               </div>
             
               <div class="social">

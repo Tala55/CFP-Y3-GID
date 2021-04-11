@@ -18,7 +18,7 @@ import Navbar from './components/Navbar/index'
 import Post from './containers/Post';
 import MainPage from './pages';
 import PageNotFound from './pages/404';
-import inspiration from './components/Tabs/inspiration';
+import inspiration from './components/Tabs/ins';
 import Aboutus from './components/Tabs/Aboutus';
 
 class App extends Component {

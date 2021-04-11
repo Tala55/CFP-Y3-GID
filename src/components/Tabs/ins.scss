@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+$theme-color: #000;
+$secondary-color: #ffd31d;
+$header-height: 80px;
+
+body {
+
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	
+}
+
+
+.nav{
+	margin-left: -50px;
+
+}
+
+.nav-list {
+	display: flex;
+	justify-content: space-between;
+	width: 75em;
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.nav-item {
+	display: flex;
+	background-color: $theme-color;
+	height: calc(100vh - 80px);
+	width: 33%;
+	overflow: hidden;
+	transition: all .3s ease;
+	position: relative;
+	align-items: center;
+	filter: grayscale(100%);
+	
+	@media screen and (max-width: 768px) {
+		width: 100%;
+		height: 200px;
+		
+		&:hover {
+			height: 350px;
+		}
+	}
+	
+	.nav-item-bg {
+		height: 100vh;
+		width: 100%;
+		display: block;
+		position: absolute;
+	}
+	
+	&:nth-child(1) .nav-item-bg {
+		background: url('https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_90,w_1400/fl_lossy,pg_1/bgonwpobyotax80xwbyr/michael-jordan-last-dance') no-repeat bottom center/cover;
+	}
+	
+	&:nth-child(2) .nav-item-bg {
+		background: url('https://www.ocregister.com/wp-content/uploads/migration/nyl/nyltt9-low.res.22.lakers1029.kjs.jpg') no-repeat center bottom/cover;	
+		
+	}
+	
+	&:nth-child(3)  .nav-item-bg {
+		background: url('https://cdn.vox-cdn.com/thumbor/SHtJqgdSk7FJHwKAQ9rDytJuQHE=/0x0:4267x2845/1200x800/filters:focal(1432x845:2114x1527)/cdn.vox-cdn.com/uploads/chorus_image/image/59592059/952761746.jpg.0.jpg') no-repeat center center/cover;	
+	}
+	
+	&:nth-child(4)  .nav-item-bg {
+		background: url('https://www.paradisepost.com/wp-content/uploads/2019/06/BNG-L-WARRIORS-0925-1037.jpg?w=1920') no-repeat center center/cover;
+	}
+	
+	.nav-item-content {
+		color: #fff;
+		margin-left: -70px;
+		opacity: .3;
+		transition: all .3s ease-in-out;
+		filter:  blur(1px);
+		
+		
+		h2 {
+			font-size: 120px;
+			font-weight: 900;
+			line-height: .9em;
+			margin: 0 0 30px;
+			text-shadow: 10px 10px 30px rgba(0,0,0,.5);
+			
+			@media screen and (max-width: 980px) {
+				font-size: 70px;
+			}
+		}
+	}
+	
+	&:hover {
+		width: 100%;
+		filter: none;
+		
+		.nav-item-content {
+			margin-left: 50px;
+			opacity: 1;
+			filter:  blur(0px);
+		}
+		
+		button {
+			margin-left: 0;
+			opacity: 1;
+		}
+	}
+	
+	@media screen and (max-width: 768px) {
+		.nav-item-bg {
+			background-size: 70% !important;
+			background-position: center right !important;
+		}
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+button {
+	padding: 15px 30px;
+	background-color: $secondary-color;
+	font-weight: 700;
+	letter-spacing: 1px;
+	border: 0;
+	font-size: .8rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 50px;
+	opacity: 0;
+	outline: 0;
+	margin-left: -60px;
+	transition: 
+		margin .5s ease-in-out,
+		opacity .5s ease-in-out,
+		background-color .2s ease;
+	
+	&:hover {
+		background-color: darken(#ffd31d, 15%);
+	}
+}
