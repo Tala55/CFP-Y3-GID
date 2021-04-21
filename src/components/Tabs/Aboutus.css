@@ -1,22 +1,22 @@
 
 
-.social {
+.social1 {
 
-font-size: 1.75rem;
+font-size: 2rem;
 
 display: flex;
-margin-left: 70%;
+margin-left: 85%;
 margin-bottom:50px;
-margin-top: -50px;
+margin-top: -79px;
 
 }
 
-.icon{
+.icon1{
 color: #000;
 
 }
-.icon:hover,
-.icon:focus {
+.icon1:hover,
+.icon1:focus {
 
 color:#a80c2b;
 }

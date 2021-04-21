@@ -63,10 +63,11 @@ export default function Aboutus() {
               <h2 style={{fontFamily:'cursive',fontSize:'23px'}}>📞 08288765222</h2>
               </div>
             
-              <div class="social">
-                <a href="https://www.facebook.com/tala.mohanna.7"className="icon" ><FaFacebook/> </a>
-                <a href="https://twitter.com/?lang=en" className="icon" ><FaTwitter /> </a>
-                <a href="https://www.instagram.com/" className="icon" ><FaInstagram /> </a>
+              <div class="social1" style={{
+padding:"30px"}}>
+                <a href="https://www.facebook.com/tala.mohanna.7"className="icon1" style={{marginRight:"25px"}} ><FaFacebook/> </a>
+                <a href="https://twitter.com/?lang=en" className="icon1" style={{marginRight:"25px"}}><FaTwitter /> </a>
+                <a href="https://www.instagram.com/" className="icon1" ><FaInstagram /> </a>
               </div>
              
     </div>

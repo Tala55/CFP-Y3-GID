@@ -58,20 +58,20 @@ body {
 	}
 	
 	&:nth-child(1) .nav-item-bg {
-		background: url('https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_90,w_1400/fl_lossy,pg_1/bgonwpobyotax80xwbyr/michael-jordan-last-dance') no-repeat bottom center/cover;
+		background: url('https://api.time.com/wp-content/uploads/2019/10/bill-gates-cambridge-lecture-02.jpg  ') no-repeat bottom center/cover;
 	}
 	
 	&:nth-child(2) .nav-item-bg {
-		background: url('https://www.ocregister.com/wp-content/uploads/migration/nyl/nyltt9-low.res.22.lakers1029.kjs.jpg') no-repeat center bottom/cover;	
+		background: url('http://historythings.com/wp-content/uploads/2016/06/SteveJobsBook.jpg ') no-repeat center bottom/cover;	
 		
 	}
 	
 	&:nth-child(3)  .nav-item-bg {
-		background: url('https://cdn.vox-cdn.com/thumbor/SHtJqgdSk7FJHwKAQ9rDytJuQHE=/0x0:4267x2845/1200x800/filters:focal(1432x845:2114x1527)/cdn.vox-cdn.com/uploads/chorus_image/image/59592059/952761746.jpg.0.jpg') no-repeat center center/cover;	
+		background: url('https://variety.com/wp-content/uploads/2015/12/oprah-variety-power-of-women-charity.jpg?w=681&h=383&crop=1 ') no-repeat center center/cover;	
 	}
 	
 	&:nth-child(4)  .nav-item-bg {
-		background: url('https://www.paradisepost.com/wp-content/uploads/2019/06/BNG-L-WARRIORS-0925-1037.jpg?w=1920') no-repeat center center/cover;
+		background: url('https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5ecc8412798e4c00060d2536%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D86%26cropX2%3D1960%26cropY1%3D0%26cropY2%3D1876 ') no-repeat center center/cover;
 	}
 	
 	.nav-item-content {
@@ -119,14 +119,14 @@ body {
 	}
 }
 
-img {
-	max-width: 100%;
-}
+// .img {
+// 	max-width: 100%;
+// }
 
-button {
-	padding: 15px 30px;
-	background-color: $secondary-color;
-	font-weight: 700;
+.Clickhere  {
+	padding: 1px 2px;
+	background-color: #a80c2b;
+	font-weight: 40;
 	letter-spacing: 1px;
 	border: 0;
 	font-size: .8rem;
@@ -142,6 +142,6 @@ button {
 		background-color .2s ease;
 	
 	&:hover {
-		background-color: darken(#ffd31d, 15%);
+		background-color: darken(#a80c2b, 15%);
 	}
 }

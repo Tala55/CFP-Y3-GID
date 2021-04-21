@@ -1,109 +1,58 @@
 import React from 'react'
-// import AllPosts from '../AllPosts'
-import $ from 'jquery';
-import "./inspiration.css";
+import './inspiration.css'
+import Inspiration from './inspiration2'
 function inspiration() {
-    $('.slide-nav').on('click', function(e) {
-        e.preventDefault();
-        // get current slide
-        var current = $('.flex--active').data('slide'),
-          // get button data-slide
-          next = $(this).data('slide');
-      
-        $('.slide-nav').removeClass('active');
-        $(this).addClass('active');
-      
-        if (current === next) {
-          return false;
-        } else {
-          $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
-          $('.flex--active').addClass('animate--end');
-          setTimeout(function() {
-            $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
-            $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
-          }, 800);
-        }
-      });
-    return (
-        <div style={{marginTop:"100px"}}>
-       <h2 style={{fontFamily:'cursive',fontSize:'30px',width:'500px',marginLeft:"300px",textAlign:"center",marginBottom:"50px"}}> Here are some tips that could help you to manage your time </h2>
-        <div >
-                        <div class="slider__warpper" >
-            <div class="flex__container flex--pikachu flex--active" data-slide="1">
-                <div class="flex__item flex__item--left">
-                <div class="flex__content">
-                    <p class="text--sub">Pokemon Gen I</p>
-                    <h1 class="text--big">Pikachu</h1>
-                    <p class="text--normal">Pikachu is an Electric-type Pokémon introduced in Generation I. Pikachu are small, chubby, and incredibly cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p>
-                </div>
-                <p class="text__background">Pikachu</p>
-                </div>
-                <div class="flex__item flex__item--right"></div>
-                <img class="pokemon__img" src="" />
-            </div>
-            <div class="flex__container flex--piplup animate--start" data-slide="2">
-                <div class="flex__item flex__item--left">
-                <div class="flex__content">
-                    <p class="text--sub">Pokemon Gen IV</p>
-                    <h1 class="text--big">Piplup</h1>
-                    <p class="text--normal">Piplup is the Water-type Starter Pokémon of the Sinnoh region. It was introduced in Generation IV. Piplup has a strong sense of self-esteem. It seldom accepts food that people give because of its pride.</p>
-                </div>
-                <p class="text__background">Piplup</p>
-                </div>
-                <div class="flex__item flex__item--right"></div>
-                <img class="pokemon__img" src="" />
-            </div>
-            <div class="flex__container flex--blaziken animate--start" data-slide="3">
-                <div class="flex__item flex__item--left">
-                <div class="flex__content">
-                    <p class="text--sub">Pokemon Gen III</p>
-                    <h1 class="text--big">Blaziken</h1>
-                    <p class="text--normal">Blaziken is the Fire/Fighting-type Starter Pokémon of the Hoenn region, introduced in Generation III. Blaziken is a large, bipedal, humanoid bird-like Pokémon that resembles a rooster.</p>
-                </div>
-                <p class="text__background">Blaziken</p>
-                </div>
-                <div class="flex__item flex__item--right"></div>
-                <img class="pokemon__img" src="" />
-            </div>
-            <div class="flex__container flex--dialga animate--start" data-slide="4">
-                <div class="flex__item flex__item--left">
-                <div class="flex__content">
-                    <p class="text--sub">Pokemon Gen IV</p>
-                    <h1 class="text--big">Dialga</h1>
-                    <p class="text--normal">Dialga is a Steel/Dragon-type Legendary Pokémon. Dialga is a sauropod-like Pokémon. It is mainly blue with some gray, metallic portions, such as its chest plate, which has a diamond in the center. It also has various, light blue lines all over
-                    its body.</p>
-                </div>
-                <p class="text__background">Dialga</p>
-                </div>
-                <div class="flex__item flex__item--right"></div>
-                <img class="pokemon__img" src="" />
-            </div>
-            <div class="flex__container flex--zekrom animate--start" data-slide="5">
-                <div class="flex__item flex__item--left">
-                <div class="flex__content">
-                    <p class="text--sub">Pokemon Gen V</p>
-                    <h1 class="text--big">Zekrom</h1>
-                    <p class="text--normal">Zekrom is a Dragon/Electric-type Legendary Pokémon. It is part of the Tao Trio, along with Reshiram and Kyurem. Zekrom is a large, black draconian Pokémon that seems to share its theme with its counterpart, Reshiram. It has piercing red eyes and
-                    dark gray to black skin that seems to be armor-like.</p>
-                </div>
-                <p class="text__background">Zekrom</p>
-                </div>
-                <div class="flex__item flex__item--right"></div>
-                <img class="pokemon__img" src="" />
-            </div>
-            </div>
+  return (
+    <div style={{marginTop:'100px',marginLeft:"150px"}}>
+		<div>
+			<h2 style={{fontFamily:"cursive",textAlign:"center",marginLeft:"-150px"}}>Tips for Managing Time Effectively</h2>
+			<p  style={{marginLeft:"-40px",fontFamily:"cursive", fontSize:"25px",marginTop:"30px",marginBottom:"50px"}}> Being conscious of time will result in self-improvement and goal achievement. That's true in both  <span style={{marginLeft:"30px"}}>your work and personal life.What's the best way to manage time effectively? Applying these <span style={{marginLeft:"340px"}}>tips is a good start</span> </span></p>
+		</div>
+      <div class="container3">
+	<div class="cards">
+		<div class="card">
+			<h2>Plan Ahead</h2>
+			<p>
+			Planning ahead is a critical part of time management. Ideally, you should plan ahead for the week or at least the day before. 
+			
+			</p>
+			<div class="number">
+				<h4 style={{fontSize:'.5px'}}>.</h4>
+			</div>
+		</div>
+	</div>
 
-            <div class="slider__navi">
-            <a href="#" class="slide-nav active" data-slide="1">pikachu</a>
-            <a href="#" class="slide-nav" data-slide="2">piplup</a>
-            <a href="#" class="slide-nav" data-slide="3">blaziken</a>
-            <a href="#" class="slide-nav" data-slide="4">dialga</a>
-            <a href="#" class="slide-nav" data-slide="5">zekrom</a>
-            </div>
-           
-        </div>
-        </div>
-    )
+	<div class="cards">
+		<div class="card">
+			<h5 style={{marginLeft:"20px",textAlign:"center",fontWeight:"bold",marginTop:"10px",fontFamily:"cursive"}}>Make Some Changes in Your Schedule</h5>
+			<p>
+			If you feel more energised at certain times of the day, change your schedule to embrace that.
+			</p>
+			<div class="number">
+				<h4 style={{fontSize:'.5px'}}>.</h4>
+			</div>
+		</div>
+	</div>
+
+	<div class="cards">
+		<div class="card">
+			<h5 style={{marginLeft:"20px",textAlign:"center",fontWeight:"bold",marginTop:"10px",fontFamily:"cursive"}}>Find out Where You're Wasting Time</h5>
+			<p>
+	
+			Many of us are prey to time-wasters that steal time we could be using much more 
+			</p>
+			<div class="number">
+				<h4 style={{fontSize:'.5px'}}>.</h4>
+			</div>
+		</div>
+	</div>
+</div>
+      <div>
+        <Inspiration/>
+      </div>
+
+    </div>
+  )
 }
 
 export default inspiration

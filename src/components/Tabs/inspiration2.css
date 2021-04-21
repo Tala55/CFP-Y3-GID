@@ -19,7 +19,6 @@
 	height: 350px;
     background-color:white;
 
-
 	position: relative;
 	cursor: pointer;
 	box-shadow: 0 0 10px #313131;
@@ -49,7 +48,7 @@
 }
 
 .cards .number h4{
-margin-top: -82px;
+  
 	line-height: 350px;
 	background-image: url('https://ak.picdn.net/shutterstock/videos/9908837/thumb/2.jpg');
 	background-size: cover;
