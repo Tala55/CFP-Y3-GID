@@ -2,8 +2,8 @@
 
 .header-section {
   background-image:linear-gradient(#5b636d,#1c1e20);
-/* 
-  background-image:linear-gradient(#1F1C2C,#a9a5bd); */
+
+ /* background-image:linear-gradient(#1F1C2C,#a9a5bd);  */
   
   position: fixed;
   left: 0;
@@ -12,11 +12,22 @@
   width: 100%;
 }
 .header-section a{
-  color: #010101;
+  color: #ffffff;
 
 }
 .header-section a:hover{
-  color: #fff;
+  font-size:25px;
+  transition: all 500ms;
+  font-size-adjust: 20px; 
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 4 4 20px rgb(143, 5, 35);
+  }
+  to {
+    text-shadow: 0 0 40px #ad07153a, 0 0 13px #ff1919;
+  }
 }
 
 .logo img {
@@ -88,7 +99,10 @@
    }
    .primary-menue ul li ul li{
        display: block;
+      text-align: center;
        border-bottom: 1px solid rgba(0, 0, 0, .1);
+       
+       margin-left: -20px;
    }
 
 .primary-menue ul li:hover ul{

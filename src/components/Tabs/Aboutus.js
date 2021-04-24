@@ -2,7 +2,7 @@ import React from 'react';
 import {FaTwitter} from 'react-icons/fa'
 import {FaFacebook} from 'react-icons/fa' 
 import {FaInstagram} from 'react-icons/fa'
-import Hala1 from '../Images/Hala1.png';
+import Hala1 from '../Images/Hala1.png'
 import Hala2 from '../Images/Hala2.png'
 import Hala3 from '../Images/Hala3.png'
 import Tala1 from '../Images/Tala1.png'

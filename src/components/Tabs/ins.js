@@ -1,7 +1,7 @@
 import React from 'react'
 import './ins.scss'
 import {AiFillFire} from 'react-icons/ai'
-import Tips from '../Images/tips.png'
+import Tips from '../Images/tips1.png'
 
 
 function ins() {
@@ -57,16 +57,16 @@ Everything we want in life involves risks.</p>
 </nav>
 		<div style={{backgroundColor:"#f1f7ff",  marginRight: '-150px',
     marginLeft:' -130px',
-    padding: '100px 40px',
+    padding: '80px 55px',
 	marginBottom:"100px",
 	marginTop:'79px'
 }}>
 			
 		<p style={{fontFamily:"cursive",textAlign:"center",fontSize:"30px"}}>Time management is the process of planning and controlling how much time to spend on specific activities. Good time management enables an individual to complete more in a shorter period of time, lowers stress, and leads to career success. </p>	
-		<img style={{display: 'block',
+		<img style={{ display: 'block',
 			marginLeft: 'auto',
 			marginRight: 'auto',
-			width: '50%', }}src={Tips}/> 
+			width: '55%',}}src={Tips}/> 
 		</div>		
 		<div>
 			<h2 style={{textAlign:"center",fontSize:"50px",}}>

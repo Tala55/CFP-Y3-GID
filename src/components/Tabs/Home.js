@@ -3,7 +3,7 @@ import './Home.css'
 
 function Home() {
     return (
-        <div>
+        <div >
       <div style={{backgroundColor:"white",padding:'20px 20px',margin:"0px",width:''}}>
             <h2 style={{textAlign:'center',color:"#a80c2b",marginTop:"70px",fontSize:"55px",fontFamily:"cursive",}}>What is Get It Done!</h2>
         <div style={{
@@ -24,7 +24,7 @@ function Home() {
             <div class="video-left left">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/SHiSe6-mOiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
             </div>
-            <div class="video-content-right right" style={{marginLeft:"-30px"}} >
+            <div class="video-content-right right" style={{marginLeft:"20px"}} >
                <h3>Watch a video on how to use our app</h3>
                <p>It’s not just about recording employee hours. It’s about understanding employee availability. It’s about hitting project deadlines — while staying on budget. It’s knowing you’ll never have to update another Excel spreadsheet. It’s about making things easy. It’s giving your team the tools they need to do their jobs well. And the insights to work more effectively than ever before.</p>
             </div>
