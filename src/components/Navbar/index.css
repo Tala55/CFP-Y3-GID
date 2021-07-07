@@ -1,32 +1,34 @@
-
-
+/* .start{
+  background-image: url(../Images/background.jpg);
+  width:100px;
+  height: 100px; 
+ 
+} */
 .header-section {
-  background-image:linear-gradient(#5b636d,#1c1e20);
-
- /* background-image:linear-gradient(#1F1C2C,#a9a5bd);  */
-  
+  /* background-image: url(../Images/background.jpg); */
   position: fixed;
   left: 0;
   top: 0;
   z-index: 99;
   width: 100%;
 }
-.header-section a{
-  color: #ffffff;
 
+.header-section a {
+  color:#1b2955
 }
-.header-section a:hover{
-  font-size:25px;
+/* .header-section a:hover {
+  
+  font-size: 25px;
   transition: all 500ms;
-  font-size-adjust: 20px; 
-}
+  font-size-adjust: 20px;
+}  */
 
-@keyframes glow {
+ @keyframes glow {
   from {
-    text-shadow: 4 4 20px rgb(143, 5, 35);
+    text-shadow: 4 4 20px white;
   }
   to {
-    text-shadow: 0 0 40px #ad07153a, 0 0 13px #ff1919;
+    text-shadow: 0 0 40px white, 0 0 13px white;
   }
 }
 
@@ -41,71 +43,52 @@
   font-size: 25px;
   font-weight: 500;
 }
-.header-menue{
+.header-menue {
+  
   width: 57%;
 }
-.header-button{
+.header-button {
   width: 13%;
   text-align: right;
 }
-.header-btn {
-  display: flex;
-  border: 2px solid #6278df;
-  padding: 7px 27px;
-  margin-top: 8px;
-  border-radius: 9px;
-  color: #6278df !important;
-  font-weight: 700; 
-  font-size: 17px;
-}
-.header-button a:hover{
-  background-color: #6278df;
-  color: #fff !important;
-}
 
-.primary-menue ul li{
+.primary-menue ul li {
   display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .primary-menue ul li a {
 
-  margin: 0 20px;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 46px;
-  transition: .5s;
-  
+
 }
-.primary-menue ul li a:hover{
- 
+/* .primary-menue ul li a:hover {
   border-radius: 5px;
+} */
 
+.primary-menue ul li ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 210px;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+  transform: scaleY(0);
+  transform-origin: top center;
 }
-
-.primary-menue ul li{
-  position: relative;
+.primary-menue ul li ul li {
   
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid rgba(240, 29, 29, 0.1);
+  margin-left: -20px;
 }
-.primary-menue ul li ul{ 
-   position: absolute;
-   left: 0;
-   top: 100%;
-   width: 210px;
-   background-color: #fff;
-    visibility: hidden;
-    opacity: 0;
-   transition: .4s;
-   transform: scaleY(0);
-   transform-origin: top center;
-   }
-   .primary-menue ul li ul li{
-       display: block;
-      text-align: center;
-       border-bottom: 1px solid rgba(0, 0, 0, .1);
-       
-       margin-left: -20px;
-   }
 
-.primary-menue ul li:hover ul{
+.primary-menue ul li:hover ul {
   opacity: 1;
   visibility: visible;
   transform: scaleY(1);

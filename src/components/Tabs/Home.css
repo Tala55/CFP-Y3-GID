@@ -1,78 +1,75 @@
-.service-section{
-    background-color: #fff;
-    padding: 100px ;
+.service-section {
+  background-color: #ffffff;
+  padding: 100px;
 }
-.service-title h2{
-    font-size: 64px;
-    margin-bottom: 30px;
+.service-title h2 {
+  font-size: 64px;
+  margin-bottom: 30px;
 }
-.service-title p{
-    color:  #767676;
-    font-size:26px ;
+.service-title p {
+  color: #555b6e ;
+  font-size: 26px;
 }
 /* service item */
-.services-items{
-    margin-bottom: -100px ;
+.services-items {
+  margin-bottom: -100px;
 }
-.service-box{
+.service-box {
+  box-shadow: 4px 4px 20px 0 rgba(66, 66, 66, 0.1);
+  margin-right: 2%;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.4s;
+}
+.service-box:nth-child(3n + 3) {
+  margin-right: 0;
+}
+.service-box:hover {
+  box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.2);
+}
 
-box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, .1);
-margin-right: 2%;
-margin-bottom: 30px;
-padding:20px;
-box-sizing: border-box;
-transition: .4s;
-}
-.service-box:nth-child(3n+3){
-    margin-right: 0;
-}
-.service-box:hover{
-    box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, .2);
+.s-icon {
+  width: 60px;
+  min-height: 168px;
+  float: left;
+  font-size: 45px;
+  margin-right: 10px;
+  color:#ffd6ba ;
 }
 
-    .s-icon {
-        width: 60px;
-        min-height: 168px;
-        float: left;
-        font-size: 45px;
-        margin-right: 10px;
-        color: #6278df;
-    }
-
-.s-content{
-    margin-top: 8px;
+.s-content {
+  margin-top: 8px;
 }
 .s-content h3 {
-    font-size: 23px;
-    font-weight: 500;
-    margin-bottom: 30px;
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 .s-content p {
-    color: #767676;
-    font-size: 20px;
-    line-height: 1.6em;
+  color: #555b6e ;
+  font-size: 20px;
+  line-height: 1.6em;
 }
 
-.banner-botton{
-    background-color: #f1f7ff;
-    margin-right: -140px;
-    margin-left: -110px;
-    padding: 100px 100px;
-
+.banner-botton {
+  margin-right: -90px;
+  margin-left: -30px;
 }
-.video-left{
-    width: 48%;
+.video-left {
+  width: 48%;
 }
-.video-content-right{
-    width: 48%;
+.video-content-right {
+  width: 48%;
 }
 .video-content-right h3 {
-    font-size: 52px;
-    font-weight: 400;
-    margin-bottom: 35px;
+  font-size: 52px;
+  font-weight: 400;
+  margin-bottom: 35px;
 }
 .video-content-right p {
-    font-size: 19px;
-    line-height: 1.7em;
-    font-weight: 100;
-    color: #767676;}
+  font-size: 19px;
+  line-height: 1.7em;
+  font-weight: 100;
+  color:#555b6e ;
+}

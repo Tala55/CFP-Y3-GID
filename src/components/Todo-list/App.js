@@ -51,6 +51,7 @@ class App extends Component {
 	handleDoneTask = (id, completed) => {
 		const filteredItems = this.state.items.map(item => {
 			item.id === id && (item.completed = !item.completed)
+			
 			return item
 		})
 
